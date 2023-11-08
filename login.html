@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>logIn</title>
+</head>
+    <body>
+        <nav></nav>
+        <div class="resultLogin" id="resultLogin">
+            <h1>LogIn Success Full...</h1>
+            </div>
+        </div>
+        <div class="formContainer">
+            <div>welcome.....let's <span>Login</span></div>
+            <form>
+                <input type="text" id="fname" name="fname" placeholder="Enter your User Id / Email" required />
+                <br />
+                <input type="password" id="pwd" name="pwd" placeholder="Enter password" required />
+                <br />
+                <input type="checkbox" name="chbox" id="chbox" onclick="toggleShowpwd()" />
+                <label for="chbox">Show Password</label>
+                <br />
+            </form>
+            <button type="button" id="submit" onclick="submitLogin()">Submit</button>
+            <button type="button" id="clear" onclick="location.reload()">
+                Clear
+            </button>
+            <div class="why">
+                congrats you got an account <span>login</span>....!
+                <div>
+                    if don't have account click on <span> <a href="index.html">Register</a> </span>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="form.js"></script>
+</html>
